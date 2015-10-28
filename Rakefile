@@ -1,3 +1,5 @@
+$:.unshift File.dirname(__FILE__) + 'lib'
+
 task :default => :tu
 
 desc "Pruebas unitarias de la clase Fracciones"
