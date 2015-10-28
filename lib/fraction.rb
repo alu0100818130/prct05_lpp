@@ -9,7 +9,7 @@ class Fracciones
 	end
 	
 	def Maximocomundivisior(f,g)
-    	g != 0 ? f: Maximocomundivisior(g, f%g)
+    	g == 0 ? f: Maximocomundivisior(g, f%g)
   	end
   	
   	def Minimocomunmultiplo(f,g)
@@ -24,13 +24,13 @@ class Fracciones
 		Fracciones.new(aux1 + aux2, mincmul)
 	end
 	
-	def -(other)
-	  self + (-other)
+	def - (other)
+	  #self + (-other)
 	  #-----------------También sirve:-------------------
-	  # mincmul = Minimocomunmultiplo(@b, other.b)
-	  # aux1 = (mincmul/@b) * @a 
-	  # aux2 = (mincmul/other.b)*other.b 
-	  # Fracciones.new(aux1 - aux2, mincmul)
+	   mincmul = Minimocomunmultiplo(@b, other.b)
+	   aux1 = (mincmul/@b) * @a 
+	   aux2 = (mincmul/other.b)*other.a 
+	   Fracciones.new(aux1 - aux2, mincmul)
 	  #--------------------------------------------------	
 	end
 	
