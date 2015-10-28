@@ -1,4 +1,5 @@
 require "lib/fraction"
+require 'test/unit'
 
 class TestPoint < Test::Unit::TestCase
   def setup
