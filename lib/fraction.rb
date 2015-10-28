@@ -30,7 +30,7 @@ class Fracciones
 	  # mincmul = Minimocomunmultiplo(@b, other.b)
 	  # aux1 = (mincmul/@b) * @a 
 	  # aux2 = (mincmul/other.b)*other.b 
-	  # Fracciones.new(aux1 + aux2, mincmul)
+	  # Fracciones.new(aux1 - aux2, mincmul)
 	  #--------------------------------------------------	
 	end
 	
