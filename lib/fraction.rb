@@ -3,6 +3,8 @@ class Fracciones
 	
 	def initialize (a, b)
 		raise TypeError, "ERROR: El denominador no puede ser cero" if b.eql? 0
+		raise RuntimeError, "ERROR" unless a.is_a? Numeric
+		raise RuntimeError, "ERROR" unless b.is_a? Numeric
 		x = Maximocomundivisior(a, b)
     	@a = a / x
     	@b = b / x
